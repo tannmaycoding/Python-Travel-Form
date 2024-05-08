@@ -1,3 +1,14 @@
+"""
+This is a form in Tkinter.
+Modules used:
+    Everything from tkinter,
+    tkinter.messagebox as tmsg
+
+Functions made:
+    rate: Shows a dialog box to rate app experience,
+    getValues: Gives values from form and appends it in txt file.
+"""
+
 from tkinter import *
 import tkinter.messagebox as tmsg
 
@@ -11,8 +22,7 @@ def rate():
         tmsg.showinfo("Thank You for rating", "Thank You for rating, Please Rate Us on TkinterStore please")
 
     else:
-        tmsg.showinfo("Thank You for rating",
-                      "Thank You For Rating, We will call you back soon for what went wrong in your experience.")
+        tmsg.showinfo("Thank You for rating", "Thank You For Rating, We will call you back soon for what went wrong in your experience.")
 
     return value
 
